@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="5dp"
+        android:layout_weight="3.32"
+        android:gravity="center" >        
+        
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="148dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:text="@string/username" />
+        
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dip"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#3b5998" />
+        
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff" />
+        
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dip"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#3b5998" />
+        
+    </RelativeLayout>
+
+    <!-- Transparent, android:background="@null" -->    
+
+    
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button10" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_press"
+                    android:drawableLeft="@drawable/outofoffice"
+                    android:gravity="left|center_vertical"
+                    android:shadowColor="#000000"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="2"
+                    android:text="@string/business_travel"
+                    android:textColor="#ffffff"
+                    android:textSize="2.8mm"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_press"
+                    android:drawableLeft="@drawable/atextension"
+                    android:gravity="left|center_vertical"
+                    android:shadowColor="#000000"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="2"
+                    android:text="@string/at_extension"
+                    android:textColor="#ffffff"
+                    android:textSize="2.8mm"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_press"
+                    android:drawableLeft="@drawable/atmobile"
+                    android:gravity="left|center_vertical"
+                    android:shadowColor="#000000"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="2"
+                    android:text="@string/mobile"
+                    android:textColor="#ffffff"
+                    android:textSize="2.8mm"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_press"
+                    android:drawableLeft="@drawable/lunch"
+                    android:gravity="left|center_vertical"
+                    android:onClick="showTimePickerDialog"
+                    android:shadowColor="#000000"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="2"
+                    android:text="@string/lunch"
+                    android:textColor="#ffffff"
+                    android:textSize="2.8mm"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_press"
+                    android:drawableLeft="@drawable/backat"
+                    android:gravity="left|center_vertical"
+                    android:onClick="showTimePickerDialog"
+                    android:shadowColor="#000000"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="2"
+                    android:text="@string/back_at"
+                    android:textColor="#ffffff"
+                    android:textSize="2.8mm"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_press"
+                    android:drawableLeft="@drawable/backtodate"
+                    android:gravity="left|center_vertical"
+                    android:onClick="showDatePickerDialog"
+                    android:shadowColor="#000000"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="2"
+                    android:text="@string/out_until"
+                    android:textColor="#ffffff"
+                    android:textSize="2.8mm"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:shadowColor="#8A8C91"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:text="@string/demo"
+                    android:textColor="#ffffff"
+                    android:textSize="2mm"
+                    android:textStyle="italic"
+                    android:typeface="sans" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
